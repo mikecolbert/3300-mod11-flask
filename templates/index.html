@@ -1,0 +1,24 @@
+{% extends 'base.html' %} 
+
+{% block title %} Welcome to the home page {% endblock%} 
+
+{% block body %}
+<main>
+  <p>Hello world!</p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minus, iste ea
+    cumque et placeat non vero, veritatis quis quia minima, quod fuga! Sequi
+    necessitatibus at ab aliquid voluptatem illo.
+  </p>
+  <img
+    src="{{ url_for('static', filename='images/laptop.jpg') }}"
+    alt="Laptop sitting on an ottoman"
+  />
+
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, optio
+    voluptate numquam sapiente veniam nesciunt a debitis hic soluta rem possimus
+    consequatur ducimus amet veritatis nemo dicta corporis. Quaerat, corrupti.
+  </p>
+</main>
+{% endblock %}
